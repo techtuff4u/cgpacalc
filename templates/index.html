@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCPA Calculator</title>
+    <style type="text/css">
+      body{
+          background-color: rgb(255, 255, 255);
+          background-position: center;
+          background-repeat: no-repeat;
+          padding: 20px auto;
+          padding-left: 0cm;
+
+         
+          
+      }
+       
+      h2{
+          background-position: center;
+          
+          text-align: center;
+          color: rgb(0, 0, 0);
+          padding: 20px auto;
+          
+      }
+      footer{
+          padding-bottom: 0cm;
+          background-position: center;
+          margin-bottom: 1cm;
+          
+      }
+
+      .dropdown{
+        margin-right:3px;
+        margin-left:0.52cm;
+        text-align:left;
+        padding-top:0px;
+        padding-right:2cm;
+        padding-left: 2cm;
+        background-position: center;
+
+        height: 200px;
+        width: 100px;
+        background-color:rgba(208, 208, 252, 0.897);
+        border-radius:1px;
+        
+      }
+
+      form{
+        background-position:center;
+        
+        padding: 0px 0.8cm 0px ;
+      
+      }
+
+      
+  
+      
+  </style>
+</head>
+<body>
+  <header>
+  
+  <h2 class="h2"> CGPA Calculator</h2>
+  </header>
+  <hr/>
+ <form class="form" name = "dep" action = "http://127.0.0.1:5000/hi" method="post">
+  <div class="dropdown" style="padding-left: 1cm; ">
+    <p style="padding-bottom: 0.01; text-align: left;" >Enter Department:<select style="width: 60px;" name="dep" id="dept">
+  
+
+      <option selected value="IT" name="dep">IT</option>
+      <option value="CSE">CSE</option>
+      <option value="EEE">EEE</option>
+      <option value="ECE">ECE</option>
+      <option value="AIML">AIML</option>
+      <option value="AIDS">AIDS</option>
+      <option value="CHEMICAL">CHEMICAL</option>
+      <option value="CIVIL">CIVIL</option>
+      <option value="MECH">MECH</option>
+      <option value="BIOTECH">BIOTECH</option>
+      <option value="EIE">EIE</option>
+      </div>
+  </select>
+
+  <br/>
+      <p style="padding-bottom: 0.01;">Enter Sem: <select name="sem" id="sem">
+
+        <option selected value="1" >1</option>
+        <option value="2">2</option>
+
+
+    </select>
+<br/>
+<p style="padding-bottom: 0.01;">
+  <a href="input.html">
+  <button title = "Click on it to check the result" id = "submit"   value = "Submit">submit</button>
+  </a>
+
+
+</p>
+</div>
+
+</form>
+
+
+<footer class="footer">
+  
+  <span>
+    <p style="padding-top: 6cm;"><hr/></p>
+  <div style="padding-top: 0cm;">
+    
+      ©
+      <span>2022</span>
+      <a  href="techtuff4u@gmail.com" > Contact Us </a>
+    
+  </div>
+</span>
+</footer>
+</body>
+</html>
