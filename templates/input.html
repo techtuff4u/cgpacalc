@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <title>GCPA Calculator</title>
+    <style type="text/css">
+      body{
+          background-color: rgb(255, 255, 255);
+          background-position: center;
+          background-repeat: no-repeat;
+          padding: 20px auto;
+          padding-left: 0cm;}
+        </style>
+    <h2 style="text-align: center;">ENTER THE DEPARTMENT AND SEM AGAIN</h2>  
+</head>
+<body>
+  <form action = "http://127.0.0.1:5000/result" method="post">
+    
+ <table style="margin:auto" border="1" cellpadding="2" cellspacing="0.11">
+    <tr>
+        <th>Subjects</th>
+        <th>grade</th>
+
+    </tr>
+    <tr>
+       {% for row in a %}
+         <tr><td style="padding-left:20px;">{{row}}</td>
+
+         <td ><select name= {{row}}  >
+         <option value="O" >O</option>
+         <option value="A+" >A+</option>
+         <option value="A" >A</option>
+         <option value="B+" >B+</option>
+         <option value="B" >B</option>
+         
+
+          </select></td>
+         </tr>
+
+     {% endfor %}
+      </tr>
+
+    
+     <p style="padding:20px 120px 20px;">Enter Department:<select name="dep" id="dept">
+      <option value="None"  name="dep">Dept</option>
+      <option value="IT" selected name="dep">IT</option>
+      <option value="CSE">CSE</option>
+      <option value="EEE">EEE</option>
+      <option value="ECE">ECE</option>
+      <option value="AIML">AIML</option>
+      <option value="AIDS">AIDS</option>
+      <option value="CHEMICAL">CHEMICAL</option>
+      <option value="CIVIL">CIVIL</option>
+      <option value="MECH">MECH</option>
+      <option value="BIOTECH">BIOTECH</option>
+      <option value="EIE">EIE</option>
+  </select>
+
+  <br/>
+    Enter sem: <select name="sem" id="sem" style="margin: auto;">
+        
+        <option selected value="1" >1</option>
+        <option value="2">2</option></p>
+
+
+    </select>
+
+    </table>
+
+    <div style="padding:20px 120px 20px;">
+  <button title = "Click on it to check the result" id = "submit"   value = "Submit">submit</button>
+  </div>
+
+
+
+    </form>
+    
+    
+
+</body>
+</html>
